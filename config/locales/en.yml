@@ -32,3 +32,9 @@
 en:
     app_title: Spotifay
     app_description: A place where you can keep all of your songs and albums.
+
+    home:
+      home:
+        title: Spotifay
+        welcome: Welcome to Spotifay!
+        description: The easiest way of adding your songs and albums.
