@@ -33,6 +33,22 @@ h1 {
 }
 
 p {
+text-align: center;
+}
+
+
+request_contact, p {
   color: white;
-  text-align: center;
+  text-align: left;
+}
+
+form label, form input {
+  display: block;
+  margin: 10px;
+  color: white;
+
+}
+
+form input, submit_tag {
+  color: black;
 }

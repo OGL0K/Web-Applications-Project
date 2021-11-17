@@ -38,3 +38,21 @@ en:
         title: Spotifay
         welcome: Welcome to Spotifay!
         description: The easiest way of adding your songs and albums.
+
+      contact:
+        title: Contact Us
+        contact_us: Please complete form to get in touch with us!
+        description: Our online services are open 7/24.
+        name: "Name:"
+        enter_name: Please enter your name
+        email: "Email:"
+        enter_email: Please enter your email address
+        telephone: "Telephone:"
+        enter_telephone: Please enter your telephone number
+        message: "Message:"
+        enter_message: Please explain your problem
+        submit: Contact Us Now!
+
+      request_contact:
+        no_email:  Email address should not be empty.
+        email_sent: Thank you for your query. We will message you as soon as we can.
