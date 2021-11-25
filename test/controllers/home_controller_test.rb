@@ -7,8 +7,7 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
 
     assert_select 'title', 'Spotifay'
     assert_select 'h1', 'Spotifay'
-    assert_select 'p', 'Welcome to Spotifay!'
-    assert_select 'p', 'The easiest way of adding your songs and albums.'
+
 
   end
 
@@ -20,9 +19,19 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
     assert_template layout: 'application'
 
     assert_select 'title', 'Spotifay'
-    assert_select 'h1', 'Contact Us'
-    assert_select 'p', 'Please complete form to get in touch with us!'
-    assert_select 'p', 'Our online services are open 7/24.'
+    assert_select 'h1', 'Contact Me'
+    assert_select 'p', 'Please complete form to get in touch with me!'
+    assert_select 'p', 'Or you can send an email. My email is og00209@surrey.ac.uk'
+  end
+
+  test "should get about" do
+      get about_url
+      assert_response :success
+
+      assert_template layout: 'application'
+
+      assert_select 'h1.about', 'About Me'
+      assert_select 'p.aboutp', 'Hello my name is Oguz Gokyuzu I am the creator of Spotifay. I am 20 years old and I study Computer Science at University of Surrey. I am originally from Turkey but I live in United Kingdom to finish my university. I created this web app to give people a better experience than any other music apps do and help people that cannot afford premium membership. Your thoughts and problems are really important for me. I will do my best to answer your questions and your thoughts. We will make this app better together so dont hesitate to contact me. You can either mail me or use contact section to get in touch with us. Enjoy your free unlimited music!'
   end
 
   test "should post request contact but no email" do

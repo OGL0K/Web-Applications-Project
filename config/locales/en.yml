@@ -36,13 +36,13 @@ en:
     home:
       home:
         title: Spotifay
-        welcome: Welcome to Spotifay!
-        description: The easiest way of adding your songs and albums.
-
+        paragrahp: The best platform to listen your music, add favourite and add notes to your music.
+                    There is no ads, no play limit and you can add unlimited songs!
+                    The best thing about Spotifay is free you dont need to pay an additional charge.
+                    Have fun using Spotifay :)
       contact:
-        title: Contact Us
-        contact_us: Please complete form to get in touch with us!
-        description: Our online services are open 7/24.
+        title: Contact Me
+        contact_us: Please complete form to get in touch with me!
         name: "Name:"
         enter_name: Please enter your name
         email: "Email:"
@@ -56,3 +56,12 @@ en:
       request_contact:
         no_email:  Email address should not be empty.
         email_sent: Thank you for your query. We will message you as soon as we can.
+
+      about:
+        aboutp: Hello my name is Oguz Gokyuzu I am the creator of Spotifay. I am 20 years old and I study Computer Science
+                  at University of Surrey. I am originally from Turkey but I live in United Kingdom to finish my university.
+                  I created this web app to give people a better experience than any other music apps do and help people that
+                  cannot afford premium membership. Your thoughts and problems are really important for me.
+                  I will do my best to answer your questions and your thoughts. We will make this app better together so dont
+                  hesitate to contact me. You can either mail me or use contact section to get in touch with us. Enjoy your free
+                  unlimited music!
