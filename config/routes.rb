@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :songs
   root 'home#home'
 
   get 'songs', to:'home#songs'
