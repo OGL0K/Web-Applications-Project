@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
-  artist: MyString
-  album: MyString
-  duration: MyString
+  title: SongTitle1
+  artist: SongArtist1
+  album: SongAlbum1
+  duration: SongDuration1
 
 two:
-  title: MyString
-  artist: MyString
-  album: MyString
-  duration: MyString
+  title: SongTitle2
+  artist: SongArtist2
+  album: SongAlbum2
+  duration: SongDuration2

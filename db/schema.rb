@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 2021_11_25_110124) do
     t.string "duration", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["title"], name: "index_songs_on_title", unique: true
+    
   end
-
+    t.index ["title"], name: "index_songs_on_title", unique: true
 end
