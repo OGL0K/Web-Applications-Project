@@ -1,4 +1,5 @@
-class Song < ApplicationRecord
+class Song < ActiveRecord::Base
+  has_many :notes, dependent: :destroy
   validates :title, presence: true
   validates :title, uniqueness: true
   validates :artist, presence: true

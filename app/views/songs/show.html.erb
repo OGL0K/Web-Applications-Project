@@ -18,6 +18,9 @@
   <%= @song.duration %>
 </p>
 <p>______________</p>
+<p>
+  <%= link_to 'Add Note', new_note_path(song_id: @song) %>
+</p>
 <li><%= link_to 'Edit', edit_song_path(@song) %></li>
 <br>
 <li><%= link_to 'Back', songs_path %></li>
