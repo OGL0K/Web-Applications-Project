@@ -26,12 +26,13 @@ body {
 }
 
 .container {
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
 }
 
 header {
   background: #006400;
+  height: 75px;
 }
 
 header::after {
@@ -41,19 +42,44 @@ header::after {
 }
 
 h1.spotifay {
-  float: left;
-  color: white;
+
+
+  a {
+    float:left;
+    color: white;
+    display: inline-block;
+    position: relative;
+    padding-top: 7px;
+  }
+
+  a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: white;
+
+    position: absolute;
+    top: 0%;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+  }
+
+  a:hover::before {
+    width: 100%;
+  }
 }
 
-nav li {
+header nav li.navbar {
   display: inline-block;
   margin-left: 60px;
-  padding-top: 30px;
+  padding-top: 20px;
+  font-size: 15px;
 
   position: relative;
 }
 
-nav a {
+li a {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
@@ -63,7 +89,7 @@ nav a:hover {
   color: white;
 }
 
-nav a::before {
+header nav a::before {
   content: '';
   display: block;
   height: 5px;
@@ -76,6 +102,27 @@ nav a::before {
   transition: all ease-in-out 250ms;
 }
 
-nav a:hover::before {
+header nav a:hover::before {
   width: 100%;
+}
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid white;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
+  font-size: 12px;
+}
+
+footer p {
+  float: left;
 }

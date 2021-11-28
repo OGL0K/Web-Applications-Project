@@ -1,3 +1,6 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
 $font: 'Work Sans', sans-serif;
 
 body {
@@ -14,13 +17,27 @@ pre {
   font-size: 11px;
 }
 
-th, td, td a, li a, h1.editheader{
+th {
+  color: #006400;
+}
+
+td, td a, li a {
   color: white;
 }
 
-td a, li.addsong {
-  background-color: green;
-  display: inline-block;
+h1.editheader, h1.newheader {
+  color: white;
+  padding: 10px;
+}
+
+li.addsong {
+  background-color: #006400;
+  text-align: center;
+  list-style: none;
+}
+
+td a {
+  background-color: #006400;
 }
 
 li a:hover, td a:hover {
@@ -32,7 +49,7 @@ li.addsong :hover ,td a:hover{
 }
 
 #notice {
-  color: green;
+  color: #006400;
 }
 
 .field_with_errors {

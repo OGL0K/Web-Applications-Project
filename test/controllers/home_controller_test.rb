@@ -7,10 +7,9 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
 
     assert_select 'title', 'Spotifay'
     assert_select 'h1', 'Spotifay'
+    assert_select 'p', 'The best platform to listen your music, add favourite and add notes to your music. There is no ads, no play limit and you can add unlimited songs! The best thing about Spotifay is free you dont need to pay an additional charge. Have fun using Spotifay :)'
 
-
-  end
-
+end
 
   test "should get contact" do
     get contact_url
@@ -48,4 +47,14 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
     assert_not_empty flash[:notice]
   end
 
+  test "should get songs" do
+    get songs_url
+    assert_response :success
+
+    assert_template layout: 'application'
+
+    assert_select 'title', 'Spotifay'
+    assert_select 'h1', 'My Songs'
+    assert_select 'p', 'Welcome to your songs. You can add, delete, add it to your favourites and even add notes to your songs. Have fun!'
+  end
 end

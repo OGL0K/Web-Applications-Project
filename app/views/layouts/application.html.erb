@@ -7,19 +7,16 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-
+    <%= render 'layouts/shim' %>
   </head>
 
   <body>
+     <%= render 'layouts/header' %>
 
-  <header>
-    <div class="container">
-    <h1 class="spotifay">Spotifay</h1>
-  
-    <%= render partial: "shared/navbar" %>
+     <div class="container">
+       <%= yield %>
+       <%= render 'layouts/footer' %>
+     </div>
 
-    </div>
-  </header>
-    <%= yield %>
   </body>
 </html>

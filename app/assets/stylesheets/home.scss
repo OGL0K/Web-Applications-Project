@@ -1,6 +1,8 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
 h1.welcome {
   color: white;
@@ -10,4 +12,11 @@ h1.welcome {
 p.paragrahp {
   color: white;
   padding: 10px;
+}
+
+nav li.songnavbar {
+  text-align: center;
+  list-style: none;
+  background-color: #006400;
+
 }
