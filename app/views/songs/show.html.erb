@@ -2,25 +2,22 @@
   <%= notice %>
 </p>
 <p>
-  <b>Title:</b>
+  <b class="show">Title</b>
   <%= @song.title %>
 </p>
 <p>
-  <b>Artist:</b>
+  <b class="show">Artist</b>
   <%= @song.artist %>
 </p>
 <p>
-  <b>Album:</b>
+  <b class="show">Album</b>
   <%= @song.album %>
 </p>
 <p>
-  <b>Duration:</b>
+  <b class="show">Duration</b>
   <%= @song.duration %>
 </p>
 <p>______________</p>
-<p>
-  <%= link_to 'Add Note', new_note_path(song_id: @song) %>
-</p>
-<li><%= link_to 'Edit', edit_song_path(@song) %></li>
-<br>
-<li><%= link_to 'Back', songs_path %></li>
+<p><li><%= link_to 'Add a Note', new_note_path(song_id: @song) %></li></p>
+<p><li><%= link_to 'Edit Song', edit_song_path(@song) %></li></p>
+<p><li><%= link_to 'Back to Songs', songs_path %></li></p>

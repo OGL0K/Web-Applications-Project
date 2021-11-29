@@ -14,14 +14,12 @@
     </div>
   <% end %>
   <div class="field">
-    <%= f.label :song %>
-    <p>
-      <%= @note.song.title %>
-    </p>
+    <b class="show">&nbsp;&nbsp;Song</b>
+    <p>&nbsp;&nbsp;<%= @note.song.title %></p>
     <%= f.hidden_field :song_id, value: @note.song.id %>
   </div>
   <div class="field">
-    <%= f.label :title %>
+    <b class="show">&nbsp&nbsp;Note</b>
     <%= f.text_field :title %>
   </div>
   <div class="actions">

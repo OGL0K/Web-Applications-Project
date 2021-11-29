@@ -21,19 +21,19 @@
         <td>
           <%= song.title %>
         </td>
-        <td>&nbsp;&nbsp;</td>
+        <td class="td"></td>
         <td>
           <%= song.artist %>
         </td>
-        <td>&nbsp;&nbsp;&nbsp;</td>
+        <td class="td"></td>
         <td>
           <%= song.album %>
         </td>
-        <td>&nbsp;&nbsp;&nbsp;</td>
+        <td class="td"></td>
         <td>
           <%= song.duration %>
         </td>
-        <td>&nbsp;&nbsp;&nbsp;</td>
+        <td class="td"></td>
         <td>
           <%= link_to 'Show', song %>
         </td>
@@ -50,4 +50,5 @@
   </tbody>
 </table>
 <br/>
-<li class="addsong">&nbsp; <%= link_to 'Add a Song', new_song_path %></li>
+<p><li class="addsong"><%= link_to 'Add A Song', new_song_path %></li></p>
+<p><li class="addsong"><%= link_to 'Go To Your Notes', notes_path %></li></p>
