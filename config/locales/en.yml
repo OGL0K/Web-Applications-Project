@@ -55,7 +55,7 @@ en:
 
       request_contact:
         no_email:  Email address should not be empty.
-        email_sent: Thank you for your query. We will message you as soon as we can.
+        email_sent: Thank you for your query. I will message you as soon as I can.
 
       about:
         aboutp: Hello my name is Oguz Gokyuzu I am the creator of Spotifay. I am 20 years old and I study Computer Science
