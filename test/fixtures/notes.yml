@@ -2,8 +2,8 @@
 
 one:
   song: one
-  title: MyString
+  note: MyText
 
 two:
   song: two
-  title: MyString
+  note: MyText

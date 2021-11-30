@@ -1,4 +1,4 @@
-class Note < ActiveRecord::Base
+class Note < ApplicationRecord
   belongs_to :song
-  validates :title, :song, presence: true
+  validates :note, :song, presence: true
 end
