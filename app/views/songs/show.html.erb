@@ -18,6 +18,7 @@
   <%= @song.duration %>
 </p>
 <p>______________</p>
-<p><li><%= link_to 'Add a Note', new_note_path(song_id: @song) %></li></p>
-<p><li><%= link_to 'Edit Song', edit_song_path(@song) %></li></p>
-<p><li><%= link_to 'Back to Songs', songs_path %></li></p>
+<p><li class="menuoptions"><%= link_to favorite_text, favorites_update_path(song: @song), id: 'favorite_link', remote: true %></li></p>
+<p><li class="menuoptions"><%= link_to 'Add a Note', new_note_path(song_id: @song) %></li></p>
+<p><li class="menuoptions"><%= link_to 'Edit Song', edit_song_path(@song) %></li></p>
+<p><li class="menuoptions"><%= link_to 'Back to Songs', songs_path %></li></p>

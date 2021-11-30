@@ -10,7 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_30_081404) do
+ActiveRecord::Schema.define(version: 2021_11_30_154142) do
+
+  create_table "favorite_songs", force: :cascade do |t|
+    t.integer "song_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["song_id"], name: "index_favorite_songs_on_song_id"
+  end
 
   create_table "notes", force: :cascade do |t|
     t.integer "song_id", null: false

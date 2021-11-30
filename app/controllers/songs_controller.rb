@@ -6,6 +6,7 @@ class SongsController < ApplicationController
   end
 
   def show
+    @favorite_exists = FavoriteSong.where(song: @song) == [] ? false : true
   end
 
   # GET /notes/new
@@ -23,7 +24,7 @@ class SongsController < ApplicationController
 
     respond_to do |format|
       if @song.save
-        format.html { redirect_to @song, notice: "Song is successfully added." }
+        format.html { redirect_to @song, notice: "You have successfully added your song." }
         format.json { render :show, status: :created, location: @song }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -36,7 +37,7 @@ class SongsController < ApplicationController
   def update
     respond_to do |format|
       if @song.update(song_params)
-        format.html { redirect_to @song, notice: "Song is successfully updated." }
+        format.html { redirect_to @song, notice: "You have successfully updated your song." }
         format.json { render :show, status: :ok, location: @song }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -49,7 +50,7 @@ class SongsController < ApplicationController
   def destroy
     @song.destroy
     respond_to do |format|
-      format.html { redirect_to songs_url, notice: "Song is successfully deleted." }
+      format.html { redirect_to songs_url, notice: "You have successfully deleted your song." }
       format.json { head :no_content }
     end
   end

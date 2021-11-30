@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'favorites/update'
   resources :notes
   resources :songs
   root 'home#home'
