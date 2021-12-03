@@ -3,8 +3,10 @@
 </head>
 <body>
   <p><%= t('.favoritep') %></p>
+  <p>_________________________________</p>
   <% FavoriteSong.all.each do |favorite| %>
     <p class="favorites"><li class="favoritelink"><%= link_to favorite.song.title, favorite.song %></li></p>
   <% end %>
+  <p>_________________________________</p>
   <br>
 </body>

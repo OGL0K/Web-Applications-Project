@@ -30,7 +30,7 @@ end
       assert_template layout: 'application'
 
       assert_select 'h1.about', 'About Me'
-      assert_select 'p.aboutp', 'Hello my name is Oguz Gokyuzu I am the creator of Spotifay. I am 20 years old and I study Computer Science at University of Surrey. I am originally from Turkey but I live in United Kingdom to finish my university. I created this web app to give people a better experience than any other music apps do and help people that cannot afford premium membership. Your thoughts and problems are really important for me. I will do my best to answer your questions and your thoughts. We will make this app better together so dont hesitate to contact me. You can either mail me or use contact section to get in touch with us. Enjoy your free unlimited music!'
+      assert_select 'p.aboutp', 'Hello my name is Oguz Gokyuzu I am the creator of Spotifay. I am 20 years old and I study Computer Science at University of Surrey. I am originally from Turkey but I live in United Kingdom to finish my university. I created this web app to give people a better experience than any other music apps do and help people that cannot afford premium membership. Your thoughts and problems are really important for me. I will do my best to answer your questions and your thoughts. We will make this app better together so dont hesitate to contact me. You can either send an email or use the contact section to get in touch with me. Enjoy your free unlimited music!'
   end
 
   test "should post request contact but no email" do
