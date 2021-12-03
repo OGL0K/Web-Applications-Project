@@ -19,8 +19,8 @@ end
 
     assert_select 'title', 'Spotifay'
     assert_select 'h1', 'Contact Me'
-    assert_select 'p', 'Please complete form to get in touch with me!'
-    assert_select 'p', 'Or you can send an email. My email is og00209@surrey.ac.uk'
+    assert_select 'p.contact_us', 'Please complete form to get in touch with me!'
+    assert_select 'p.emailp', 'You can also send an email. My email is og00209@surrey.ac.uk.'
   end
 
   test "should get about" do
