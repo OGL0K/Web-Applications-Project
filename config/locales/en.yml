@@ -65,5 +65,14 @@ en:
                   I will do my best to answer your questions and your thoughts. We will make this app better together so dont
                   hesitate to contact me. You can either send an email or use the contact section to get in touch with me. Enjoy your free
                   unlimited music!
-      favorites:
+    favorites:
+      index:
         favoritep: Your favorites are listed here.
+
+    songs:
+      index:
+        songp: Welcome to your songs. You can add, delete, add it to your favourites and even add notes to your songs.
+
+    notes:
+      index:
+        notep: Your notes are listed here.

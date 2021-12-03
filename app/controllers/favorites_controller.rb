@@ -1,5 +1,8 @@
 class FavoritesController < ApplicationController
 
+  def index
+  end
+
   def update
     favorite = FavoriteSong.where(song: Song.find(params[:song]))
 

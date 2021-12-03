@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get 'favorites/update'
   resources :notes
   resources :songs
+  resources :favorites
   root 'home#home'
 
   get 'songs', to:'home#songs'

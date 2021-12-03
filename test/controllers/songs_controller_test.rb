@@ -10,6 +10,17 @@ class SongsControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "should get songs" do
+    get songs_url
+    assert_response :success
+
+    assert_template layout: 'application'
+
+    assert_select 'title', 'Spotifay'
+    assert_select 'h1', 'My Songs'
+    assert_select 'p', 'Welcome to your songs. You can add, delete, add it to your favourites and even add notes to your songs.'
+  end
+
   test "should get new" do
     get new_song_url
     assert_response :success
