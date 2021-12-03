@@ -1,9 +1,13 @@
-<h1 class="welcome">Welcome to Spotifay!</h1>
-<p class="paragrahp"><%= t('.paragrahp') %></p>
-<nav>
-  <li class="songnavbar"><%= link_to "Go To Your Songs Now!", songs_path %></li>
-</nav>
-<br>
-<% flash.each do |key, value|%>
-<%= content_tag :div, content_tag(:p, value), id: "#{key}" unless value.blank? %>
-<% end %>
+<head>
+  <h1 class="welcome">Welcome to Spotifay!</h1>
+</head>
+<body>
+  <p class="paragrahp"><%= t('.paragrahp') %></p>
+  <nav>
+    <li class="songnavbar"><%= link_to "Go To Your Songs Now!", songs_path %></li>
+  </nav>
+  <br>
+  <% flash.each do |key, value|%>
+  <%= content_tag :div, content_tag(:p, value), id: "#{key}" unless value.blank? %>
+  <% end %>
+</body>

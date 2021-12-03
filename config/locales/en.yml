@@ -31,7 +31,6 @@
 
 en:
     app_title: Spotifay
-    app_description: A place where you can keep all of your songs and albums.
 
     home:
       home:
@@ -43,6 +42,7 @@ en:
       contact:
         title: Contact Me
         contact_us: Please complete form to get in touch with me!
+        emailp: Or you can send an email. My email is og00209@surrey.ac.uk.
         name: "Name:"
         enter_name: Please enter your name
         email: "Email:"
@@ -51,7 +51,7 @@ en:
         enter_telephone: Please enter your telephone number
         message: "Message:"
         enter_message: Please explain your problem
-        submit: Contact Us Now!
+        submit: Contact Me!
 
       request_contact:
         no_email:  Email address should not be empty.
@@ -65,3 +65,5 @@ en:
                   I will do my best to answer your questions and your thoughts. We will make this app better together so dont
                   hesitate to contact me. You can either mail me or use contact section to get in touch with us. Enjoy your free
                   unlimited music!
+      favorites:
+        favoritep: Your favorites are listed here.

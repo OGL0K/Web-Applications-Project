@@ -11,6 +11,9 @@ class HomeController < ApplicationController
   def songs
   end
 
+  def favorites
+  end
+
   def request_contact
     name = params[:name]
     email = params[:email]

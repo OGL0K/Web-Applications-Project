@@ -55,6 +55,21 @@ end
 
     assert_select 'title', 'Spotifay'
     assert_select 'h1', 'My Songs'
-    assert_select 'p', 'Welcome to your songs. You can add, delete, add it to your favourites and even add notes to your songs. Have fun!'
+    assert_select 'p', 'Welcome to your songs. You can add, delete, add it to your favourites and even add notes to your songs.'
   end
+
+  test "should get notes" do
+    get notes_url
+    assert_response :success
+
+    assert_select 'p', 'Your notes are listed here.'
+  end
+
+  test "should get favorites" do
+    get favorites_url
+    assert_response :success
+
+    assert_select 'p', 'Your favorites are listed here.'
+  end
+
 end

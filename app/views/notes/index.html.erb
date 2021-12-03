@@ -1,40 +1,44 @@
-<h1 class="editheader">Your Notes</h1>
-<table>
-  <thead>
-    <tr>
-      <th>Song</th>
-      <th>&nbsp;&nbsp;&nbsp;</th>
-      <th>Note</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @notes.each do |note| %>
+<head>
+  <h1 class="editheader">Your Notes</h1>
+</head>
+<body>
+  <p>Your notes are listed here.</p>
+  <table>
+    <thead>
       <tr>
-        <td>
-          <%= note.song.title %>
-        </td>
-        <td>&nbsp;</td>
-        <td>
-          <%= note.note %>
-        </td>
-        <td class="td"></td>
-        <td>
-          <%= link_to 'Show', note %>
-        </td>
-        <td>&nbsp;</td>
-        <td>
-          <%= link_to 'Edit', edit_note_path(note) %>
-        </td>
-        <td>&nbsp;</td>
-        <td>
-          <%= link_to 'Destroy', note, method: :delete, data: { confirm: 'Do you want to destroy this note?' } %>
-        </td>
+        <th>Song</th>
+        <th>&nbsp;&nbsp;&nbsp;</th>
+        <th>Note</th>
+        <th></th>
+        <th></th>
+        <th></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
-<br>
-<li class="menuoptions"><%= link_to 'Back to Songs', songs_path %></li>
+    </thead>
+    <tbody>
+      <% @notes.each do |note| %>
+        <tr>
+          <td>
+            <%= note.song.title %>
+          </td>
+          <td>&nbsp;</td>
+          <td>
+            <%= note.note %>
+          </td>
+          <td class="td"></td>
+          <td>
+            <%= link_to 'Show', note %>
+          </td>
+          <td>&nbsp;</td>
+          <td>
+            <%= link_to 'Edit', edit_note_path(note) %>
+          </td>
+          <td>&nbsp;</td>
+          <td>
+            <%= link_to 'Destroy', note, method: :delete, data: { confirm: 'Do you want to destroy this note?' } %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <br>
+</body>

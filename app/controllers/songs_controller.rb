@@ -9,16 +9,16 @@ class SongsController < ApplicationController
     @favorite_exists = FavoriteSong.where(song: @song) == [] ? false : true
   end
 
-  # GET /notes/new
+  # GET /songs/new
   def new
     @song = Song.new
   end
 
-  # GET /notes/1/edit
+  # GET /songs/1/edit
   def edit
   end
 
-  # POST /notes or /notes.json
+  # POST /song or /songs.json
   def create
     @song = Song.new(song_params)
 
@@ -33,7 +33,7 @@ class SongsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /notes/1 or /notes/1.json
+  # PATCH/PUT /songs/1 or /songs/1.json
   def update
     respond_to do |format|
       if @song.update(song_params)
@@ -46,11 +46,12 @@ class SongsController < ApplicationController
     end
   end
 
-  # DELETE /notes/1 or /notes/1.json
+  # DELETE /songs/1 or /songs/1.json
   def destroy
     @song.destroy
+
     respond_to do |format|
-      format.html { redirect_to songs_url, notice: "You have successfully deleted your song." }
+      format.html { redirect_to songs_path}
       format.json { head :no_content }
     end
   end

@@ -1,61 +1,58 @@
-<h1 class="songheader">My Songs</h1>
-<p class="songparagraph">Welcome to your songs. You can add, delete, add it to your favourites and even add notes to your songs. Have fun!</p>
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>&nbsp;&nbsp;&nbsp;</th>
-      <th>Artist</th>
-      <th>&nbsp;&nbsp&nbsp;&nbsp;</th>
-      <th>Album</th>
-      <th>&nbsp;&nbsp;&nbsp;</th>
-      <th>Duration</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @songs.each do |song| %>
+<head>
+  <h1 class="songheader">My Songs</h1>
+</head>
+<body>
+  <p class="songparagraph">Welcome to your songs. You can add, delete, add it to your favourites and even add notes to your songs.</p>
+  <table>
+    <thead>
       <tr>
-        <td>
-          <%= song.title %>
-        </td>
-        <td class="td"></td>
-        <td>
-          <%= song.artist %>
-        </td>
-        <td class="td"></td>
-        <td>
-          <%= song.album %>
-        </td>
-        <td class="td"></td>
-        <td>
-          <%= song.duration %>
-        </td>
-        <td class="td"></td>
-        <td>
-          <%= link_to 'Show', song %>
-        </td>
-        <td>&nbsp;</td>
-        <td>
-          <%= link_to 'Edit', edit_song_path(song) %>
-        </td>
-        <td>&nbsp;</td>
-        <td>
-          <%= link_to 'Destroy', song, method: :delete, data: { confirm: 'Do you want to delete this song?' } %>
-        </td>
+        <th>Title</th>
+        <th>&nbsp;&nbsp;&nbsp;</th>
+        <th>Artist</th>
+        <th>&nbsp;&nbsp&nbsp;&nbsp;</th>
+        <th>Album</th>
+        <th>&nbsp;&nbsp;&nbsp;</th>
+        <th>Duration</th>
+        <th></th>
+        <th></th>
+        <th></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
-<h1 class="editheader">Your Favorites</h1>
-
-<% FavoriteSong.all.each do |favorite| %>
-  <p class="favorites"><li class="favoritelink"><%= link_to favorite.song.title, favorite.song %></li></p>
-<% end %>
-
-
-<br/>
-<p><li class="addsong"><%= link_to 'Add A Song', new_song_path %></li></p>
-<p><li class="addsong"><%= link_to 'Go To Your Notes', notes_path %></li></p>
+    </thead>
+    <tbody>
+      <% @songs.each do |song| %>
+        <tr>
+          <td>
+            <%= song.title %>
+          </td>
+          <td class="td"></td>
+          <td>
+            <%= song.artist %>
+          </td>
+          <td class="td"></td>
+          <td>
+            <%= song.album %>
+          </td>
+          <td class="td"></td>
+          <td>
+            <%= song.duration %>
+          </td>
+          <td class="td"></td>
+          <td>
+            <%= link_to 'Show', song %>
+          </td>
+          <td>&nbsp;</td>
+          <td>
+            <%= link_to 'Edit', edit_song_path(song) %>
+          </td>
+          <td>&nbsp;</td>
+          <td>
+            <%= link_to 'Destroy', song, method: :delete, data: { confirm: 'Do you want to delete this song?' } %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <br>
+  <p><li class="addsong"><%= link_to 'Add a Song' , new_song_path %></li></p>
+  <br/>
+</body>

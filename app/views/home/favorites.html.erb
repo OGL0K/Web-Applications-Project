@@ -1,0 +1,10 @@
+<head>
+  <h1 class="editheader">Your Favorites</h1>
+</head>
+<body>
+  <p><%= t('.favoritep') %></p>
+  <% FavoriteSong.all.each do |favorite| %>
+    <p class="favorites"><li class="favoritelink"><%= link_to favorite.song.title, favorite.song %></li></p>
+  <% end %>
+  <br>
+</body>
