@@ -47,18 +47,4 @@ end
     assert_not_empty flash[:notice]
   end
 
-  test "should get notes" do
-    get notes_url
-    assert_response :success
-
-    assert_select 'p', 'Your notes are listed here.'
-  end
-
-  test "should get favorites" do
-    get favorites_url
-    assert_response :success
-
-    assert_select 'p', 'Your favorites are listed here.'
-  end
-
 end

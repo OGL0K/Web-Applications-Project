@@ -11,6 +11,13 @@ class NotesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "should get notes" do
+    get notes_url
+    assert_response :success
+
+    assert_select 'p', 'Your notes are listed here.'
+  end
+
   test "should get new" do
     get new_note_url, params: {note: { song_id: @song.id}}
     assert_response :success
