@@ -13,7 +13,7 @@ class FavoritesControllerTest < ActionDispatch::IntegrationTest
     assert_template layout: 'application'
 
     assert_select 'title', 'Spotifay'
-    assert_select 'h1', 'Your Favorites'
+    assert_select 'h1', 'My Favorites'
     assert_select 'p', 'Your favorites are listed here.'
   end
 end

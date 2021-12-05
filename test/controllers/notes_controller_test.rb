@@ -15,6 +15,7 @@ class NotesControllerTest < ActionDispatch::IntegrationTest
     get notes_url
     assert_response :success
 
+    assert_select 'h1', 'My Notes'
     assert_select 'p', 'Your notes are listed here.'
   end
 
